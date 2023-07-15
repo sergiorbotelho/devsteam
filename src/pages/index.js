@@ -1,3 +1,4 @@
+import SaleCard from "@/components/cards/saleCard/saleCard";
 import Container from "@/components/container/container";
 import Navbar from "@/components/navbar/navbar";
 import Subtitle from "@/components/tipography/subtitle/subtitle";
@@ -20,6 +21,7 @@ export default function Home() {
         <Container>
           <div>
             <Subtitle>Promoções</Subtitle>
+            <SaleCard />
           </div>
           <div>
             <Subtitle>Outros jogos</Subtitle>
