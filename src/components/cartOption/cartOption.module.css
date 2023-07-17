@@ -28,3 +28,7 @@
 .remove:hover {
   text-decoration: underline;
 }
+
+.image {
+  object-fit: contain;
+}

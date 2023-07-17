@@ -4,7 +4,6 @@
   position: absolute;
   padding: 20px;
   right: 60px;
-  height: 451px;
   z-index: 10;
 }
 
@@ -18,7 +17,7 @@
 
 .priceline {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 30px;
   font-size: 16px;
 }
