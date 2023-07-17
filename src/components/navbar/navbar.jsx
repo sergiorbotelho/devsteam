@@ -1,3 +1,4 @@
+import CartButton from "../forms/cartButton/cartButton";
 import Input from "../forms/input/input";
 import Logo from "../logo/logo";
 import styles from "./navbar.module.css";
@@ -9,7 +10,7 @@ export default function Navbar() {
       <div className={styles.search}>
         <Input placeholder="Buscar" fullwidth type="text" />
       </div>
-      <BsCart4 size={40} />
+      <CartButton />
     </nav>
   );
 }
