@@ -1,6 +1,6 @@
-import { useState } from "react";
 import { useRecoilState } from "recoil";
 import { cartState } from "@/atoms/cartState";
+
 import styles from "@/styles/index.module.css";
 
 import SaleCard from "@/components/cards/saleCard/saleCard";
@@ -75,8 +75,63 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className={styles.session}>
+          <div>
             <Subtitle>Outros jogos</Subtitle>
+            <div className={styles.gamecontainer}>
+              <GameCard
+                onAdd={() =>
+                  handleAddProduct({
+                    name: "Counter Strike",
+                    fullPrice: 99.9,
+                    image: "counter-strike.jpg",
+                  })
+                }
+              />
+            </div>
+            <div className={styles.gamecontainer}>
+              <GameCard
+                onAdd={() =>
+                  handleAddProduct({
+                    name: "Counter Strike",
+                    fullPrice: 99.9,
+                    image: "counter-strike.jpg",
+                  })
+                }
+              />
+            </div>
+            <div className={styles.gamecontainer}>
+              <GameCard
+                onAdd={() =>
+                  handleAddProduct({
+                    name: "Counter Strike",
+                    fullPrice: 99.9,
+                    image: "counter-strike.jpg",
+                  })
+                }
+              />
+            </div>
+            <div className={styles.gamecontainer}>
+              <GameCard
+                onAdd={() =>
+                  handleAddProduct({
+                    name: "Counter Strike",
+                    fullPrice: 99.9,
+                    image: "counter-strike.jpg",
+                  })
+                }
+              />
+            </div>
+            <div className={styles.gamecontainer}>
+              <GameCard
+                onAdd={() =>
+                  handleAddProduct({
+                    name: "Counter Strike",
+                    fullPrice: 99.9,
+                    image: "counter-strike.jpg",
+                  })
+                }
+              />
+            </div>
             <div className={styles.gamecontainer}>
               <GameCard
                 onAdd={() =>
