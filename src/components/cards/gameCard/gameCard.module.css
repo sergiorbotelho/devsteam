@@ -1,7 +1,7 @@
 .gamecard {
   background-color: #2983aa;
   display: flex;
-  z-index: 99;
+  /* z-index: 99; */
   overflow: hidden;
 }
 .info {

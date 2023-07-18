@@ -10,6 +10,7 @@ export default function GameCard({ onAdd }) {
         src="/products/counter-strike.jpg"
         width={300}
         height={145}
+        alt="Counter-Strike"
       />
       <div className={styles.info}>
         <h3 className={styles.title}>Counter strike: Global offensive</h3>
