@@ -2,7 +2,7 @@ import styles from "./cartButton.module.css";
 import { BsCart4 } from "react-icons/bs";
 import CartMenu from "@/components/cartMenu/cartMenu";
 import { useState } from "react";
-export default function CartButton({ cart, onRemove }) {
+export default function CartButton() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
@@ -12,7 +12,7 @@ export default function CartButton({ cart, onRemove }) {
         size={40}
         onClick={() => setShowMenu(!showMenu)}
       />
-      {showMenu && <CartMenu cart={cart} onRemove={onRemove} />}
+      {showMenu && <CartMenu />}
     </div>
   );
 }

@@ -3,14 +3,14 @@ import Input from "../forms/input/input";
 import Logo from "../logo/logo";
 import styles from "./navbar.module.css";
 import { BsCart4 } from "react-icons/bs";
-export default function Navbar({ cart, onRemove }) {
+export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <Logo />
       <div className={styles.search}>
         <Input placeholder="Buscar" fullwidth type="text" />
       </div>
-      <CartButton cart={cart} onRemove={onRemove} />
+      <CartButton />
     </nav>
   );
 }
