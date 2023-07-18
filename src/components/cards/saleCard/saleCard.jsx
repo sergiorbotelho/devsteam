@@ -10,7 +10,13 @@ export default function SaleCard({
 }) {
   return (
     <div className={styles.salecard}>
-      <Image src={`/products/${name}`} alt={name} width={250} height={300} />
+      <Image
+        src={`/products/${name}`}
+        alt={name}
+        width={250}
+        height={300}
+        className={styles.image}
+      />
       <div className={styles.info}>
         <h3 className={styles.title}>Oferta exclusiva</h3>
         <div className={styles.pricecard}>

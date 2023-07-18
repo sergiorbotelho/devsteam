@@ -1,6 +1,8 @@
 .gamecard {
   background-color: #2983aa;
   display: flex;
+  z-index: 99;
+  overflow: hidden;
 }
 .info {
   padding: 10px;
@@ -8,6 +10,8 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  background-color: #2983aa;
+  z-index: 99;
 }
 
 .title {
@@ -34,6 +38,13 @@
   color: #beeb14;
   font-size: 32px;
   font-weight: 700;
+}
+.image {
+  transition: transform 0.3s;
+}
+.image:hover {
+  transform: scale(1.1);
+  z-index: 1;
 }
 
 @media screen and (max-width: 700px) {
